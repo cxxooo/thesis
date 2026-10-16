@@ -1,0 +1,12 @@
+# installed by npm install — big, and anyone can reinstall it
+node_modules/
+
+# built app (bash build-mac.sh)
+dist/
+
+# macOS
+.DS_Store
+
+# test backups and archives
+*.loom
+*.zip

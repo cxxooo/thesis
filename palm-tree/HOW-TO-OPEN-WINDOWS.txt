@@ -1,0 +1,19 @@
+Palm Tree Pet — how to open on Windows (test version)
+
+1. Right-click "Palm Tree Pet-Windows.zip" → Extract All… → Extract.
+   (Don't run it from inside the zip — it won't work.)
+2. Open the extracted "Palm Tree Pet" folder and double-click "Palm Tree Pet.exe".
+   Tip: move the folder somewhere permanent first, e.g. Documents.
+3. Windows may show "Windows protected your PC", because this is a student test app.
+   Click "More info" → "Run anyway". You only need to do this the first time.
+4. A palm tree appears at the bottom-right of your screen. Its icon is in the system tray
+   (bottom-right, near the clock — click the ^ arrow if you don't see it).
+
+Click the brown old leaves to trim them. Drag the trunk to move the tree.
+Menu: click the palm icon in the system tray. Quit: palm icon → Quit.
+
+This test version records how you use the palm tree (how long it's open, moves, trims, settings,
+menu clicks) for Cici's thesis research. It doesn't see your screen, files, or typing.
+Turn it off anytime: palm icon → Test data → Share test data.
+
+Works on Windows 10 and 11.

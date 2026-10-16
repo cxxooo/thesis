@@ -1,0 +1,20 @@
+Palm Tree Pet — how to open (test version)
+
+1. Double-click "Palm Tree Pet.zip" (in Downloads) to unzip it.
+2. Drag "Palm Tree Pet" into your Applications folder.
+3. Double-click it. macOS will say it "cannot be opened" / "can't check it for malicious software",
+   because this is a student test app that isn't from the App Store. Click "Done" (not "Move to Trash").
+4. Open System Settings → Privacy & Security, scroll down, and click "Open Anyway" next to
+   "Palm Tree Pet was blocked…". Enter your password, then click "Open Anyway" again.
+   (Older macOS: right-click the app → Open → Open.)
+5. A palm tree appears at the bottom-right of your screen, with a 🌴 icon in the menu bar.
+   You only need to do steps 3–4 the first time.
+
+Click the brown old leaves to trim them. Drag the trunk to move the tree.
+Quit: 🌴 in the menu bar → Quit.
+
+This test version records how you use the palm tree (how long it's open, moves, trims, settings,
+menu clicks) for Cici's thesis research. It doesn't see your screen, files, or typing.
+Turn it off anytime: 🌴 → Test data → Share test data.
+
+Needs a Mac with Apple Silicon (M1, M2, M3, M4). Check:  → About This Mac → Chip.

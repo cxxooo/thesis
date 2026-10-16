@@ -1,0 +1,13 @@
+{
+  "name": "palm-tree-pet",
+  "productName": "Palm Tree Pet",
+  "version": "0.6.0",
+  "description": "A desktop pet palm tree you keep trimmed.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^38.8.6"
+  }
+}

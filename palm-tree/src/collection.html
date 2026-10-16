@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'">
+  <title>Collection</title>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; user-select: none; cursor: default; }
+    /* the whole screen gets a little darker (#000000 at 10%) */
+    body { background: rgba(0, 0, 0, 0.10); opacity: 0; transition: opacity 220ms ease; }
+    body.shown { opacity: 1; }
+    /* the poster sits centered, right on top of the Dock */
+    #art {
+      position: absolute; left: 50%; bottom: 0;
+      transform: translate(-50%, 16px);
+      transition: transform 380ms cubic-bezier(.2, .8, .2, 1);
+    }
+    body.shown #art { transform: translate(-50%, 0); }
+    canvas { display: block; width: 100%; height: auto; }
+    /* left and right edges gradually fade to transparent */
+    #art {
+      -webkit-mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+      mask-image: linear-gradient(to right, transparent 0%, #000 8%, #000 92%, transparent 100%);
+    }
+  </style>
+</head>
+<body>
+  <div id="art"><canvas id="c"></canvas></div>
+  <script src="collection.js"></script>
+</body>
+</html>

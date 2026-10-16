@@ -1,0 +1,14 @@
+# installed by npm install — big, and anyone can reinstall it
+node_modules/
+# built apps (build-mac.sh / build-windows.sh)
+dist/
+.build-tools/
+# macOS
+.DS_Store
+# backups and test files
+*.zip
+*.loom
+*.before-*
+# private: the Google Sheet address Palm Tree Pet sends test data to.
+# Anyone who has it could send fake data to the sheet.
+analytics-config.json

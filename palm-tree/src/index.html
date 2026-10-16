@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; font-src 'self' data:; style-src 'self' 'unsafe-inline'">
+  <title>Palm Tree Pet</title>
+  <style>
+    html, body { margin: 0; padding: 0; background: transparent; overflow: hidden; user-select: none; }
+    canvas { display: block; image-rendering: pixelated; image-rendering: crisp-edges; }
+    /* ---- onboarding text (sizes are set from JS so they follow the Size menu) ---- */
+    #onb { position: absolute; pointer-events: none; }
+    .card {
+      position: absolute; left: 0; top: 0; width: 100%;
+      font-family: 'Pixelify Sans', monospace; font-weight: 600; line-height: 1.2;
+      color: #663931; opacity: 0;
+      transition: transform 450ms cubic-bezier(.2,.8,.2,1), opacity 350ms ease;
+    }
+    .card .g { color: #009119; }
+    .card.shown { opacity: 1; }
+    .card.instant { transition: none; }
+  </style>
+</head>
+<body>
+  <canvas id="c"></canvas>
+  <div id="onb">
+    <div class="card"><span class="g">Los Angeles</span> alone is estimated to <span class="g">have over 40,000</span> public street <span class="g">palms</span> (and hundreds of thousands more on private properties).</div>
+    <div class="card">The City decided to plant palms in honor of <span class="g">the 1932 Olympics and</span> to avert the unemployment following <span class="g">the Great Depression.</span></div>
+    <div class="card">Overgrown palm fronds can weigh up to <span class="g">80 pounds</span>! Trimming your palm trees is essential <span class="g">for safety and tree health.</span></div>
+    <div class="card"><span class="g">Click</span> the old palm leaves to cut them off.</div>
+  </div>
+  <script src="game.js"></script>
+</body>
+</html>

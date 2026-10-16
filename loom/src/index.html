@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'">
+  <title>Keystroke Loom</title>
+  <style>
+    html, body { margin: 0; padding: 0; width: 100%; height: 100%; background: transparent; overflow: hidden; user-select: none; }
+    svg { display: block; width: 100%; height: 100%; }
+    /* a new cell slides in along the weft, like the shuttle passing */
+    .new { animation: land 260ms cubic-bezier(.2, .8, .2, 1) both; }
+    /* the first knot: a small pop at the bottom right */
+    .tie { animation: tie 420ms cubic-bezier(.3, 1.6, .5, 1) both; transform-origin: center; transform-box: fill-box; }
+    @keyframes tie { from { opacity: 0; transform: scale(.2) rotate(-30deg); } to { opacity: 1; transform: none; } }
+    @keyframes land { from { opacity: 0; transform: translateX(var(--from, 0px)); } to { opacity: 1; transform: none; } }
+    @media (prefers-reduced-motion: reduce) { .new, .tie { animation: none; } }
+  </style>
+</head>
+<body>
+  <!-- the page sets the viewBox; the window follows its height -->
+  <svg id="loom" viewBox="-40 -10 440 380" xmlns="http://www.w3.org/2000/svg"></svg>
+  <script src="loom.js"></script>
+</body>
+</html>
